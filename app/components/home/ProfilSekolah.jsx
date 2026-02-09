@@ -31,6 +31,7 @@ export default function ProfilSekolah() {
               title="Profil SLB Pelita Kasih Bandar Lampung"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
               allowFullScreen
+              loading="lazy"
               className="w-full h-full"
             />
           </div>

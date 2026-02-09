@@ -4,6 +4,7 @@ import { motion } from "framer-motion";
 import { MapPin, Phone, Mail, Clock, Facebook, Instagram, Youtube } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
+import { FaTiktok } from "react-icons/fa";
 
 const footerLinks = [
   { label: "Beranda", href: "#beranda" },
@@ -15,9 +16,10 @@ const footerLinks = [
 ];
 
 const socialLinks = [
-  { icon: Instagram, label: "Instagram", href: "https://instagram.com/slb_pelitakasih" },
-  { icon: Youtube, label: "YouTube", href: "https://youtube.com/@slb.pelita.kasih_" },
-  { icon: Facebook, label: "Facebook", href: "https://facebook.com/PelitaKasih.slb" },
+  { icon: Instagram, label: "Instagram", href: "https://instagram.com/slbpelitakasih" },
+  { icon: Youtube, label: "YouTube", href: "https://youtube.com/@slbpelitakasih6420" },
+  { icon: Facebook, label: "Facebook", href: "https://www.facebook.com/profile.php?id=100090603782821" },
+  { icon: FaTiktok, label: "Tiktok", href: "https://www.tiktok.com/@slbpelitakasih" },
 ];
 
 export default function Footer() {
@@ -74,7 +76,7 @@ export default function Footer() {
               </div>
             </Link>
 
-            <p className="text-white/80 text-sm leading-relaxed mb-6 max-w-md">
+            <p className="text-white/80 text-sm leading-relaxed mb-6 max-w-md text-justify">
               Sekolah Luar Biasa yang berkomitmen memberikan pendidikan terbaik
               bagi peserta didik berkebutuhan khusus dalam suasana kasih dan
               persaudaraan yang hangat, aman, dan inklusif.
@@ -147,8 +149,8 @@ export default function Footer() {
 
               <li className="flex items-center gap-3">
                 <Mail className="w-4 h-4 text-white/70 shrink-0" />
-                <a href="mailto:slbpelitakasih6420@gmail.com" className="hover:text-white transition">
-                  slbpelitakasih6420@gmail.com
+                <a href="mailto:slbpelitakasihbdl19@gmail.com" className="hover:text-white transition">
+                  slbpelitakasihbdl19@gmail.com
                 </a>
               </li>
             </ul>

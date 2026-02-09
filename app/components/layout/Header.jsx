@@ -98,7 +98,7 @@ export default function Header() {
         animate={{ 
           y: isScrolled ? 0 : -100, 
           opacity: isScrolled ? 1 : 0,
-          pointerEvents: isScrolled ? "auto" : "none"
+          pointerEvents: isScrolled || isMobileMenuOpen ? "auto" : "none"
         }}
         transition={{ duration: 0.3, ease: "easeInOut" }}
         className="fixed top-0 left-0 right-0 z-50 bg-white/60 backdrop-blur-lg border-b border-primary-100/30 shadow-sm will-change-transform"

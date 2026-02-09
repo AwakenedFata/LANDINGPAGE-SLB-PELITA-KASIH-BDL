@@ -5,6 +5,22 @@ import Link from "next/link";
 import { motion } from "framer-motion";
 
 export default function Hero() {
+  const handleScrollTo = (e, href) => {
+    e.preventDefault();
+    const targetId = href.replace("#", "");
+    const element = document.getElementById(targetId);
+    if (element) {
+      const headerOffset = 80;
+      const elementPosition = element.getBoundingClientRect().top;
+      const offsetPosition = elementPosition + window.scrollY - headerOffset;
+
+      window.scrollTo({
+        top: offsetPosition,
+        behavior: "smooth",
+      });
+    }
+  };
+
   return (
     <section
       id="beranda"
@@ -49,6 +65,7 @@ export default function Hero() {
           <div className="pt-4 flex flex-col sm:flex-row items-center justify-center gap-4">
             <Link
               href="#ppdb"
+              onClick={(e) => handleScrollTo(e, "#ppdb")}
               className="w-full sm:w-auto px-8 py-3 md:py-4 text-white font-medium rounded-full text-base md:text-lg shadow-xl hover:scale-105 transition-all"
               style={{ backgroundColor: '#0b0378', boxShadow: '0 10px 25px rgba(11, 3, 120, 0.3)' }}
             >
@@ -56,6 +73,7 @@ export default function Hero() {
             </Link>
             <Link
               href="#profil"
+              onClick={(e) => handleScrollTo(e, "#profil")}
               className="w-full sm:w-auto px-8 py-3 md:py-4 bg-white/20 hover:bg-white/30 backdrop-blur-[5px] text-white font-medium rounded-full text-base md:text-lg border border-white/30 transition-all"
             >
               Tentang Kami

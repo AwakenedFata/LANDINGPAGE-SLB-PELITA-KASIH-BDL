@@ -62,7 +62,7 @@ export default function PPDB() {
               
               <div className="space-y-6 sm:space-y-8 relative before:absolute before:left-3 sm:before:left-4 before:top-3 sm:before:top-4 before:bottom-3 sm:before:bottom-4 before:w-0.5 before:bg-purple-200">
                 {jadwal.map((item, index) => (
-                  <div key={index} className="relative pl-10 sm:pl-12">
+                  <div key={index} className="relative pl-14 sm:pl-12">
                     <div className="absolute left-0 top-0 w-6 h-6 sm:w-8 sm:h-8 rounded-full bg-gradient-to-br from-[#0b0378]/40 to-[#0b0378] text-[#d6a143] flex items-center justify-center font-bold text-xs sm:text-sm ring-4 ring-white">
                       {index + 1}
                     </div>
@@ -94,7 +94,7 @@ export default function PPDB() {
 
           {/* Informasi Kontak */}
           <div className="mt-10 pt-8 border-t border-gray-200 grid sm:grid-cols-2 gap-6">
-            <div className="flex items-start gap-4 p-4 rounded-lg transition-colors">
+            <div className="flex items-center gap-4 p-4 rounded-lg transition-colors">
               <div className="w-12 h-12 rounded-xl bg-gradient-to-br from-[#0b0378]/40 to-[#0b0378] flex items-center justify-center shrink-0">
                 <MapPin className="w-6 h-6 text-[#d6a143]" />
               </div>
@@ -107,7 +107,7 @@ export default function PPDB() {
                 </div>
               </div>
             </div>
-            <div className="flex items-start gap-4 p-4 rounded-lg transition-colors">
+            <div className="flex items-center gap-4 p-4 rounded-lg transition-colors">
               <div className="w-12 h-12 rounded-xl bg-gradient-to-br from-[#0b0378]/40 to-[#0b0378] flex items-center justify-center shrink-0">
                 <Phone className="w-6 h-6 text-[#d6a143]" />
               </div>

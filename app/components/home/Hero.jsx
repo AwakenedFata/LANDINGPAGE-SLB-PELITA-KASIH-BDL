@@ -14,7 +14,7 @@ export default function Hero() {
         initial={{ opacity: 0, scale: 1.1 }}
         animate={{ opacity: 1, scale: 1 }}
         transition={{ duration: 1.5 }}
-        className="absolute inset-0 z-0"
+        className="absolute inset-0 z-0 will-change-transform"
       >
         <Image
           src="/images/SISWA.avif"
@@ -39,8 +39,12 @@ export default function Hero() {
           <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold leading-tight drop-shadow-lg">
             Membangun Kemandirian dan Karakter Peserta Didik
           </h1>
-          <p className="text-base md:text-2xl text-white/90 font-light max-w-2xl mx-auto drop-shadow-md">
-            SLB Pelita Kasih memberikan layanan pendidikan khusus yang berfokus pada pengembangan kemampuan, kemandirian dan karakter peserta didik di Bandar Lampung
+          <p 
+            className="text-base md:text-2xl text-white/90 font-light max-w-2xl md:max-w-4xl mx-auto drop-shadow-md text-justify md:text-center"
+          >
+            SLB Pelita Kasih memberikan layanan pendidikan khusus yang <br className="hidden md:block" />
+            berfokus pada pengembangan kemampuan, kemandirian <br className="hidden md:block" />
+            dan karakter peserta didik di Bandar Lampung
           </p>
           <div className="pt-4 flex flex-col sm:flex-row items-center justify-center gap-4">
             <Link

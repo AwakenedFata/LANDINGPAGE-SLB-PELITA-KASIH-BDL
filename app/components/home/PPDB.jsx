@@ -45,7 +45,7 @@ export default function PPDB() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.6, delay: 0.2 }}
-          className="bg-white rounded-xl shadow-xl p-5 sm:p-8 lg:p-12"
+          className="bg-white rounded-xl shadow-xl p-5 sm:p-8 lg:p-12 max-w-6xl mx-auto"
         >
           <h3 className="text-xl sm:text-2xl font-semibold text-[#0b0378] text-center mb-8 sm:mb-10">
             Informasi Pendaftaran Tahun Ajaran 2026/2027
@@ -68,7 +68,7 @@ export default function PPDB() {
                       {index + 1}
                     </div>
                     <h5 className="text-base sm:text-lg font-semibold text-[#0b0378]">{item.title}</h5>
-                    <p className="text-purple-600 font-semibold text-xs sm:text-sm">{item.date}</p>
+                    <p className="text-[#0b0378] font-semibold text-xs sm:text-sm">{item.date}</p>
                   </div>
                 ))}
               </div>

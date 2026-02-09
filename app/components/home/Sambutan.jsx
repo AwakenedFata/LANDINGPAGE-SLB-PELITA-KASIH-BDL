@@ -8,9 +8,9 @@ export default function Sambutan() {
   return (
     <section className="relative py-12 lg:py-16  bg-gradient-to-b from-purple-100/70 to-purple-100/70 overflow-hidden font-poppins">
       {/* Decorative Background */}
-      <div className="absolute inset-0 pointer-events-none overflow-hidden">
-        <div className="absolute top-0 right-0 w-96 h-96 bg-primary-200/30 rounded-full blur-3xl -translate-y-1/2 translate-x-1/2" />
-        <div className="absolute bottom-0 left-0 w-80 h-80 bg-secondary-200/20 rounded-full blur-3xl translate-y-1/2 -translate-x-1/2" />
+      <div className="absolute inset-0 pointer-events-none overflow-hidden transform-gpu">
+        <div className="absolute top-0 right-0 w-96 h-96 bg-primary-200/30 rounded-full blur-3xl -translate-y-1/2 translate-x-1/2 will-change-transform" />
+        <div className="absolute bottom-0 left-0 w-80 h-80 bg-secondary-200/20 rounded-full blur-3xl translate-y-1/2 -translate-x-1/2 will-change-transform" />
       </div>
 
       <div className="relative w-full px-4 py-0 md:px-12 lg:px-16">

@@ -40,7 +40,7 @@ export default function Footer() {
   };
 
   return (
-    <footer className="relative bg-gradient-to-b from-[#0b0378]/75 to-[#0b0378] text-white overflow-hidden font-poppins">
+    <footer className="relative bg-gradient-to-b from-[#494578] to-[#0b0378] text-white overflow-hidden font-poppins">
       {/* Glow Background */}
       <div className="absolute inset-0 pointer-events-none">
         <div className="absolute -top-40 -right-40 w-80 h-80 bg-white/5 rounded-full blur-3xl" />
@@ -62,7 +62,7 @@ export default function Footer() {
             <Link href="#beranda" className="flex items-center gap-4 mb-6">
               <div className="relative w-12 h-12 bg-white rounded-xl p-1.5 shadow">
                 <Image
-                  src="/images/slblogo.png"
+                  src="/images/slblogo-bg.png"
                   alt="Logo SLB Pelita Kasih"
                   fill
                   className="object-contain"
@@ -186,13 +186,9 @@ export default function Footer() {
 
         {/* Bottom Bar */}
         <div className="border-t border-white/10 pt-8">
-          <div className="flex flex-col sm:flex-row items-center justify-between gap-4 text-sm">
-            <p className="text-primary-200 text-center sm:text-left">
+          <div className="flex items-center justify-center text-sm">
+            <p className="text-primary-200 text-center">
               © {currentYear} SLB Pelita Kasih Bandar Lampung. Hak Cipta Dilindungi.
-            </p>
-
-            <p className="text-primary-300 text-xs text-center sm:text-right">
-              Semua anak berhak mendapatkan pendidikan yang lebih baik
             </p>
           </div>
         </div>

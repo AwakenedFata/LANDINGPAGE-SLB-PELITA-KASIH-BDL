@@ -33,14 +33,14 @@ export default function Hero() {
           transition={{ duration: 0.8, delay: 0.3 }}
           className="space-y-6"
         >
-          <span className="inline-block px-4 py-2 rounded-full bg-white/20 backdrop-blur-md text-sm md:text-lg font-medium border border-white/30 text-blue-100">
+          <span className="inline-block px-4 py-2 rounded-full bg-white/20 backdrop-blur-[5px] text-sm md:text-lg font-medium border border-white/30 text-white">
             Selamat Datang di SLB Pelita Kasih
           </span>
-          <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold leading-tight drop-shadow-lg">
+          <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-semibold leading-tight drop-shadow-lg">
             Membangun Kemandirian dan Karakter Peserta Didik
           </h1>
           <p 
-            className="text-base md:text-2xl text-white/90 font-light max-w-2xl md:max-w-4xl mx-auto drop-shadow-md text-justify md:text-center"
+            className="text-base md:text-2xl text-white/90 font-extralight max-w-2xl md:max-w-4xl mx-auto drop-shadow-md text-justify md:text-center"
           >
             SLB Pelita Kasih memberikan layanan pendidikan khusus yang <br className="hidden md:block" />
             berfokus pada pengembangan kemampuan, kemandirian <br className="hidden md:block" />
@@ -49,14 +49,14 @@ export default function Hero() {
           <div className="pt-4 flex flex-col sm:flex-row items-center justify-center gap-4">
             <Link
               href="#ppdb"
-              className="w-full sm:w-auto px-8 py-3 md:py-4 text-white font-bold rounded-full text-base md:text-lg shadow-xl hover:scale-105 transition-all"
+              className="w-full sm:w-auto px-8 py-3 md:py-4 text-white font-medium rounded-full text-base md:text-lg shadow-xl hover:scale-105 transition-all"
               style={{ backgroundColor: '#0b0378', boxShadow: '0 10px 25px rgba(11, 3, 120, 0.3)' }}
             >
               Daftar Sekarang
             </Link>
             <Link
               href="#profil"
-              className="w-full sm:w-auto px-8 py-3 md:py-4 bg-white/20 hover:bg-white/30 backdrop-blur-md text-white font-semibold rounded-full text-base md:text-lg border border-white/30 transition-all"
+              className="w-full sm:w-auto px-8 py-3 md:py-4 bg-white/20 hover:bg-white/30 backdrop-blur-[5px] text-white font-medium rounded-full text-base md:text-lg border border-white/30 transition-all"
             >
               Tentang Kami
             </Link>

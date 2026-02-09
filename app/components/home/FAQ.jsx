@@ -31,7 +31,7 @@ export default function FAQ() {
   };
 
   return (
-    <section id="faq" className="relative py-12 lg:py-20 bg-gradient-to-b from-purple-100/70 to-purple-100/70 overflow-hidden font-poppins">
+    <section id="faq" className="relative py-12 lg:py-20 bg-[#e6e5f1] overflow-hidden font-poppins">
       <div className="relative max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
         <motion.div
           initial={{ opacity: 0, y: 30 }}

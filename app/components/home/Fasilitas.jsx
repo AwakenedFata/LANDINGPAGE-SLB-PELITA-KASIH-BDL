@@ -1,41 +1,45 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { Building2, School, Dumbbell, Music, Trophy, Users } from "lucide-react";
+import { LuSchool } from "react-icons/lu";
+import { MdOutlineMeetingRoom, MdOutlineSportsSoccer } from "react-icons/md";
+import { IoMusicalNotesOutline } from "react-icons/io5";
+import { GoTrophy } from "react-icons/go";
+import { IoIosPeople } from "react-icons/io";
 
 const facilities = [
   {
-    icon: Building2,
+    icon: LuSchool,
     title: "Gedung Milik Sendiri",
     description: "Gedung sekolah yang nyaman dan aman sebagai ruang belajar yang mendukung aktivitas pendidikan sehari-hari",
     iconBg: "bg-primary-800",
   },
   {
-    icon: School,
+    icon: MdOutlineMeetingRoom,
     title: "Ruang Kelas",
     description: "Ruang kelas yang kondusif dengan sarana pembelajaran yang disesuaikan untuk mendukung proses belajar siswa",
     iconBg: "bg-primary-800",
   },
   {
-    icon: Dumbbell,
+    icon: MdOutlineSportsSoccer,
     title: "Sarana Olahraga",
     description: "Fasilitas olahraga untuk menunjang perkembangan fisik, motorik, dan kebugaran siswa",
     iconBg: "bg-amber-500",
   },
   {
-    icon: Music,
+    icon: IoMusicalNotesOutline,
     title: "Ruang Ekstrakurikuler",
     description: "Ruang khusus untuk kegiatan seni, musik, keterampilan, dan pengembangan minat siswa",
     iconBg: "bg-primary-800",
   },
   {
-    icon: Trophy,
+    icon: GoTrophy,
     title: "Beasiswa Prestasi",
     description: "Program beasiswa bagi siswa yang menunjukkan potensi dan prestasi di berbagai bidang",
     iconBg: "bg-amber-500",
   },
   {
-    icon: Users,
+    icon: IoIosPeople,
     title: "Tenaga Pendidik Bersertifikasi",
     description: "Didukung oleh guru dan tenaga pendidik profesional yang berpengalaman dalam pendidikan khusus",
     iconBg: "bg-primary-800",
@@ -44,7 +48,7 @@ const facilities = [
 
 export default function Fasilitas() {
   return (
-    <section id="fasilitas" className="relative py-12 lg:py-20 bg-gradient-to-b from-purple-100/70 to-purple-100/70 overflow-hidden font-poppins">
+    <section id="fasilitas" className="relative py-12 lg:py-20 bg-[#e6e5f1] overflow-hidden font-poppins">
       <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <motion.div
           initial={{ opacity: 0, y: 30 }}
@@ -56,7 +60,7 @@ export default function Fasilitas() {
           <h2 className="text-3xl md:text-4xl font-semibold text-[#0b0378] mb-4">
             Fasilitas & Lingkungan
           </h2>
-          <p className="max-w-2xl mx-auto text-lg text-gray-600">
+          <p className="max-w-[40rem] mx-auto text-lg text-[#6b6b6b] font-normal">
             Fasilitas dan lingkungan belajar yang dirancang untuk mendukung proses pendidikan secara optimal dan berkelanjutan
           </p>
         </motion.div>
@@ -75,10 +79,10 @@ export default function Fasilitas() {
                 <div className="w-14 h-14 sm:w-16 sm:h-16 rounded-xl bg-gradient-to-br from-[#0b0378]/60 to-[#0b0378] flex items-center justify-center mb-4 sm:mb-5 mx-auto shadow-md">
                   <facility.icon className="w-7 h-7 sm:w-8 sm:h-8 text-[#d6a143]" />
                 </div>
-                <h3 className="text-base sm:text-lg font-medium text-[#0b0378] text-center mb-2 sm:mb-3">
+                <h3 className="text-base sm:text-lg font-poppins font-medium text-[#0b0378] text-center sm:mb-3">
                   {facility.title}
                 </h3>
-                <p className="text-neutral-600 text-xs sm:text-[12px] text-center leading-relaxed">
+                <p className="text-neutral-600 text-xs sm:text-[14px] text-center leading-tight font-['Calibri',sans-serif] font-normal max-w-[250px] mx-auto">
                   {facility.description}
                 </p>
               </div>

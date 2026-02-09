@@ -12,18 +12,17 @@ const jadwal = [
 ];
 
 const syarat = [
-  "Surat Keterangan Hasil Asesmen",
-  "Mengisi formulir pendaftaran yang telah disediakan",
+  "Mengisi Formulir Pendaftaran",
   "Pasfoto 3×4 (4 lembar)",
   "Fotokopi akta kelahiran (2 lembar)",
   "Fotokopi kartu keluarga (2 lembar)",
-  "Fotokopi KTP kedua orang tua (masing-masing 2 lembar)",
-  "Hasil tes IQ dan data pendukung lainnya (jika ada)",
+  "Fotokopi KTP kedua orang tua",
+  "Hasil tes IQ dan data pendukung lainnya",
 ];
 
 export default function PPDB() {
   return (
-    <section id="ppdb" className="relative py-12 lg:py-20 bg-gradient-to-b from-purple-100/70 to-purple-100/70 overflow-hidden font-poppins">
+    <section id="ppdb" className="relative py-12 lg:py-20 bg-[#e6e5f1] overflow-hidden font-poppins">
       <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <motion.div
           initial={{ opacity: 0, y: 30 }}
@@ -35,7 +34,7 @@ export default function PPDB() {
           <h2 className="text-3xl md:text-4xl font-semibold text-[#0b0378] mb-4">
             Informasi PPDB
           </h2>
-          <p className="max-w-2xl mx-auto text-lg text-gray-600">
+          <p className="max-w-lg mx-auto text-lg text-[#6b6b6b]">
             Informasi lengkap mengenai proses, jadwal, dan persyaratan pendaftaran peserta didik baru
           </p>
         </motion.div>
@@ -56,7 +55,7 @@ export default function PPDB() {
             <div>
               <div className="flex items-center gap-3 mb-6 sm:mb-8">
                 <div className="w-10 h-10 sm:w-12 sm:h-12 rounded-xl bg-gradient-to-br from-[#0b0378]/40 to-[#0b0378] flex items-center justify-center">
-                  <Calendar className="w-5 h-5 sm:w-6 sm:h-6 text-white" />
+                  <Calendar className="w-5 h-5 sm:w-6 sm:h-6 text-[#d6a143]" />
                 </div>
                 <h4 className="text-lg sm:text-xl font-semibold text-[#0b0378]">Waktu Pendaftaran</h4>
               </div>
@@ -64,11 +63,11 @@ export default function PPDB() {
               <div className="space-y-6 sm:space-y-8 relative before:absolute before:left-3 sm:before:left-4 before:top-3 sm:before:top-4 before:bottom-3 sm:before:bottom-4 before:w-0.5 before:bg-purple-200">
                 {jadwal.map((item, index) => (
                   <div key={index} className="relative pl-10 sm:pl-12">
-                    <div className="absolute left-0 top-0 w-6 h-6 sm:w-8 sm:h-8 rounded-full bg-gradient-to-br from-[#0b0378]/40 to-[#0b0378] text-white flex items-center justify-center font-bold text-xs sm:text-sm ring-4 ring-white">
+                    <div className="absolute left-0 top-0 w-6 h-6 sm:w-8 sm:h-8 rounded-full bg-gradient-to-br from-[#0b0378]/40 to-[#0b0378] text-[#d6a143] flex items-center justify-center font-bold text-xs sm:text-sm ring-4 ring-white">
                       {index + 1}
                     </div>
                     <h5 className="text-base sm:text-lg font-semibold text-[#0b0378]">{item.title}</h5>
-                    <p className="text-[#0b0378] font-semibold text-xs sm:text-sm">{item.date}</p>
+                    <p className="text-[#6b6b6b] font-semibold text-xs sm:text-sm">{item.date}</p>
                   </div>
                 ))}
               </div>
@@ -78,7 +77,7 @@ export default function PPDB() {
             <div>
               <div className="flex items-center gap-3 mb-6">
                 <div className="w-12 h-12 rounded-xl bg-gradient-to-br from-[#0b0378]/40 to-[#0b0378] flex items-center justify-center">
-                  <FileText className="w-6 h-6 text-white" />
+                  <FileText className="w-6 h-6 text-[#d6a143]" />
                 </div>
                 <h4 className="text-xl font-semibold text-[#0b0378]">Syarat Pendaftaran</h4>
               </div>
@@ -95,9 +94,9 @@ export default function PPDB() {
 
           {/* Informasi Kontak */}
           <div className="mt-10 pt-8 border-t border-gray-200 grid sm:grid-cols-2 gap-6">
-            <div className="flex items-start gap-4 p-4 rounded-lg bg-gray-50 hover:bg-gray-100 transition-colors">
+            <div className="flex items-start gap-4 p-4 rounded-lg transition-colors">
               <div className="w-12 h-12 rounded-xl bg-gradient-to-br from-[#0b0378]/40 to-[#0b0378] flex items-center justify-center shrink-0">
-                <MapPin className="w-6 h-6 text-white" />
+                <MapPin className="w-6 h-6 text-[#d6a143]" />
               </div>
               <div>
                 <h5 className="font-semibold text-[#0b0378] mb-1">Tempat Pendaftaran</h5>
@@ -108,9 +107,9 @@ export default function PPDB() {
                 </div>
               </div>
             </div>
-            <div className="flex items-start gap-4 p-4 rounded-lg bg-gray-50 hover:bg-gray-100 transition-colors">
+            <div className="flex items-start gap-4 p-4 rounded-lg transition-colors">
               <div className="w-12 h-12 rounded-xl bg-gradient-to-br from-[#0b0378]/40 to-[#0b0378] flex items-center justify-center shrink-0">
-                <Phone className="w-6 h-6 text-white" />
+                <Phone className="w-6 h-6 text-[#d6a143]" />
               </div>
               <div>
                 <h5 className="font-semibold text-[#0b0378] mb-1">Informasi Daring</h5>

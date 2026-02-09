@@ -6,7 +6,7 @@ import Image from "next/image";
 
 export default function Sambutan() {
   return (
-    <section className="relative py-12 lg:py-16  bg-gradient-to-b from-purple-100/70 to-purple-100/70 overflow-hidden font-poppins">
+    <section className="relative py-12 lg:py-16 bg-[#e6e5f1] overflow-hidden font-poppins">
       {/* Decorative Background */}
       <div className="absolute inset-0 pointer-events-none overflow-hidden transform-gpu">
         <div className="absolute top-0 right-0 w-96 h-96 bg-primary-200/30 rounded-full blur-3xl -translate-y-1/2 translate-x-1/2 will-change-transform" />
@@ -66,7 +66,7 @@ export default function Sambutan() {
                 </span>
               </p>
 
-              <div className="space-y-4 text-neutral-600 leading-relaxed text-justify text-sm sm:text-base">
+              <div className="space-y-4 text-neutral-600 leading-tight text-justify text-[20px] max-w-xl" style={{ fontFamily: "'Calibri Light', Calibri, sans-serif" }}>
                 <p>
                   Puji Syukur kepada Tuhan yang Maha Esa atas penyertaannya
                   sehingga SLB Pelita Kasih dapat terus melaksanakan pelayanan

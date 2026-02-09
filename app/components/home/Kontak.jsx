@@ -9,28 +9,28 @@ const contactInfo = [
     icon: MapPin,
     title: "Alamat",
     content: "Jl. Pangeran Antasari, Bandar Lampung, Lampung",
-    iconBg: "bg-gradient-to-b from-purple-100/80 to-purple-100/80",
+    iconBg: "bg-[#e6e5f1]",
     iconColor: "text-[#0b0378]",
   },
   {
     icon: Phone,
     title: "Telepon / WhatsApp",
     content: "0896-8083-3967 (Suranti)",
-    iconBg: "bg-gradient-to-b from-purple-100/80 to-purple-100/80",
+    iconBg: "bg-[#e6e5f1]",
     iconColor: "text-[#0b0378]",
   },
   {
     icon: Mail,
     title: "Email",
     content: "slbpelitakasihbdl19@gmail.com",
-    iconBg: "bg-gradient-to-b from-purple-100/80 to-purple-100/80",
+    iconBg: "bg-[#e6e5f1]",
     iconColor: "text-[#0b0378]",
   },
   {
     icon: Clock,
     title: "Jam Operasional",
     content: "Senin – Jumat\n08.00 – 15.00 WIB",
-    iconBg: "bg-gradient-to-b from-purple-100/80 to-purple-100/80",
+    iconBg: "bg-[#e6e5f1]",
     iconColor: "text-[#0b0378]",
   },
 ];
@@ -50,7 +50,7 @@ export default function Kontak() {
   };
 
   return (
-    <section id="kontak" className="relative py-12 lg:py-20 bg-gradient-to-b from-purple-100/70 to-purple-100/70 overflow-hidden font-poppins">
+    <section id="kontak" className="relative py-12 lg:py-20 bg-[#e6e5f1] overflow-hidden font-poppins">
       <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <motion.div
           initial={{ opacity: 0, y: 30 }}
@@ -62,7 +62,7 @@ export default function Kontak() {
           <h2 className="text-3xl md:text-4xl font-semibold text-[#0b0378] mb-4">
             Kontak & Lokasi Sekolah
           </h2>
-          <p className="max-w-2xl mx-auto text-lg text-gray-600">
+          <p className="max-w-md mx-auto text-lg text-gray-600 leading-tight">
             Silakan hubungi kami untuk informasi lebih lanjut atau menjadwalkan kunjungan ke sekolah
           </p>
         </motion.div>
@@ -137,7 +137,7 @@ export default function Kontak() {
                   value={formData.name}
                   onChange={(e) => setFormData({ ...formData, name: e.target.value })}
                   placeholder="Masukkan nama Anda"
-                  className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#0b0378] focus:border-transparent outline-none transition-all"
+                  className="w-full px-4 py-3 border border-[#0b0378] rounded-lg placeholder-[#0b0378] focus:outline-none focus:ring-2 focus:ring-[#0b0378] focus:border-[#0b0378] transition-all"
                 />
               </div>
               <div>
@@ -151,7 +151,7 @@ export default function Kontak() {
                   onChange={(e) => setFormData({ ...formData, message: e.target.value })}
                   placeholder="Tuliskan pesan Anda di sini..."
                   rows="6"
-                  className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#0b0378] focus:border-transparent outline-none transition-all resize-none"
+                  className="w-full px-4 py-3 border border-[#0b0378] rounded-lg placeholder-[#0b0378] focus:outline-none focus:ring-2 focus:ring-[#0b0378] focus:border-[#0b0378] transition-all resize-none"
                 />
               </div>
               <button

@@ -79,7 +79,7 @@ export default function Footer() {
             <p className="text-white/80 text-sm leading-relaxed mb-6 max-w-md text-justify">
               Sekolah Luar Biasa yang berkomitmen memberikan pendidikan terbaik
               bagi peserta didik berkebutuhan khusus dalam suasana kasih dan
-              persaudaraan yang hangat, aman, dan inklusif.
+              persaudaraan yang hangat dan aman.
             </p>
 
             <div className="flex gap-3">

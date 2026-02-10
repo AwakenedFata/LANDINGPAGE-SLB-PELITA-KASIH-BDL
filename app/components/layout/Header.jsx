@@ -78,17 +78,23 @@ export default function Header() {
     e.preventDefault();
     const targetId = href.replace("#", "");
     const element = document.getElementById(targetId);
-    if (element) {
-      const headerOffset = 80;
-      const elementPosition = element.getBoundingClientRect().top;
-      const offsetPosition = elementPosition + window.scrollY - headerOffset;
-
-      window.scrollTo({
-        top: offsetPosition,
-        behavior: "smooth",
-      });
-    }
+    
+    // Close mobile menu immediately to avoid blocking scroll
     setIsMobileMenuOpen(false);
+    
+    if (element) {
+      // Use a small delay to ensure menu animation completes and scroll works
+      setTimeout(() => {
+        if (window.__lenis) {
+          window.__lenis.scrollTo(element, { offset: -80 });
+        } else {
+          const headerOffset = 80;
+          const elementPosition = element.getBoundingClientRect().top;
+          const offsetPosition = elementPosition + window.scrollY - headerOffset;
+          window.scrollTo({ top: offsetPosition, behavior: "smooth" });
+        }
+      }, 100);
+    }
   };
 
   return (

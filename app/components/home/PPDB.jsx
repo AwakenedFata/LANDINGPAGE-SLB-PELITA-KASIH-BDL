@@ -60,10 +60,10 @@ export default function PPDB() {
                 <h4 className="text-lg sm:text-xl font-semibold text-[#0b0378]">Waktu Pendaftaran</h4>
               </div>
               
-              <div className="space-y-6 sm:space-y-8 relative before:absolute before:left-3 sm:before:left-4 before:top-3 sm:before:top-4 before:bottom-3 sm:before:bottom-4 before:w-0.5 before:bg-purple-200">
+              <div className="space-y-6 sm:space-y-8 relative before:absolute before:left-[19px] sm:before:left-[23px] before:top-3 sm:before:top-4 before:bottom-3 sm:before:bottom-4 before:w-0.5 before:bg-purple-200">
                 {jadwal.map((item, index) => (
-                  <div key={index} className="relative pl-14 sm:pl-12">
-                    <div className="absolute left-0 top-0 w-6 h-6 sm:w-8 sm:h-8 rounded-full bg-gradient-to-br from-[#0b0378]/40 to-[#0b0378] text-[#d6a143] flex items-center justify-center font-bold text-xs sm:text-sm ring-4 ring-white">
+                  <div key={index} className="relative pl-12 sm:pl-16">
+                    <div className="absolute left-2 sm:left-2 top-0 w-6 h-6 sm:w-8 sm:h-8 rounded-full bg-gradient-to-br from-[#0b0378]/40 to-[#0b0378] text-[#d6a143] flex items-center justify-center font-bold text-xs sm:text-sm ring-4 ring-white">
                       {index + 1}
                     </div>
                     <h5 className="text-base sm:text-lg font-semibold text-[#0b0378]">{item.title}</h5>

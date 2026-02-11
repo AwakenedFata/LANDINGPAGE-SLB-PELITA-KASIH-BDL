@@ -63,14 +63,15 @@ export default function Hero() {
             dan karakter peserta didik di Bandar Lampung
           </p>
           <div className="pt-4 flex flex-col sm:flex-row items-center justify-center gap-4">
-            <Link
-              href="#ppdb"
-              onClick={(e) => handleScrollTo(e, "#ppdb")}
+            <a
+              href="https://wa.me/6289680833967?text=Halo%20Bu%20Suranti%2C%20saya%20ingin%20bertanya%20mengenai%20pendaftaran%20di%20SLB%20Pelita%20Kasih."
+              target="_blank"
+              rel="noopener noreferrer"
               className="w-full sm:w-auto px-8 py-3 md:py-4 text-white font-medium rounded-full text-base md:text-lg shadow-xl hover:scale-105 transition-all"
               style={{ backgroundColor: '#0b0378', boxShadow: '0 10px 25px rgba(11, 3, 120, 0.3)' }}
             >
               Daftar Sekarang
-            </Link>
+            </a>
             <Link
               href="#profil"
               onClick={(e) => handleScrollTo(e, "#profil")}

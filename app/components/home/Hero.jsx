@@ -26,7 +26,7 @@ const SLIDES = [
   },
   {
     id: 2,
-    image: "/images/FOTBAR-GURU.JPEG",
+    image: "/images/FOTBAR-GURU.avif",
     title: "Pengajar Profesional & Berpengalaman",
     subtitle: "Guru-guru bersertifikasi yang penuh kasih dan dedikasi dalam mendidik.",
     cta: "Profil Guru",

@@ -18,13 +18,7 @@ export default function ProfilSekolah() {
           </span>
         </motion.div>
 
-        <motion.div
-          initial={{ opacity: 0, y: 30 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          transition={{ duration: 0.6, delay: 0.2 }}
-          className="relative"
-        >
+    
           <div className="aspect-video overflow-hidden shadow-2xl bg-white">
             <iframe
               src="https://www.youtube.com/embed/KGGBXJFcQNA"
@@ -35,7 +29,6 @@ export default function ProfilSekolah() {
               className="w-full h-full"
             />
           </div>
-        </motion.div>
       </div>
     </section>
   );

@@ -31,7 +31,7 @@ export default function ProfilSekolah() {
             whileInView={{ scale: 1 }}
             viewport={{ once: true }}
             transition={{ duration: 0.6, ease: "easeOut" }}
-            className="aspect-video overflow-hidden shadow-2xl bg-white rounded-xl transform-gpu"
+            className="aspect-video overflow-hidden shadow-2xl bg-white transform-gpu"
           >
             {/* Iframe statis */}
             <iframe

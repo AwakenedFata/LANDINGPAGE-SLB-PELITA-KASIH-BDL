@@ -27,7 +27,7 @@ const SLIDES = [
   {
     id: 2,
     image: "/images/FOTBAR-GURU.JPEG",
-    title: "Pengajar Profesional & Berpengalaman",
+    title: "Pengajarr Profesional & Berpengalaman",
     subtitle: "Guru-guru bersertifikasi yang penuh kasih dan dedikasi dalam mendidik.",
     cta: "Profil Guru",
     ctaLink: "#profil",

@@ -26,7 +26,7 @@ const SLIDES = [
   },
   {
     id: 2,
-    image: "/images/FOTBAR-GURU.avif",
+    image: "/images/FOTBAR-GURU.webp",
     title: "Pengajar Profesional & Berpengalaman",
     subtitle: "Guru-guru bersertifikasi yang penuh kasih dan dedikasi dalam mendidik.",
     cta: "Daftar Sekarang",
@@ -188,7 +188,7 @@ export default function Hero() {
               onClick={() => goToSlide(idx)}
               className={`h-3 rounded-full transition-all duration-300 ${
                 idx === currentIndex
-                  ? 'bg-sky-500 w-10'
+                  ? 'bg-[#0b0378] w-10'
                   : 'bg-white/50 hover:bg-white w-3'
               }`}
               aria-label={`Go to slide ${idx + 1}`}

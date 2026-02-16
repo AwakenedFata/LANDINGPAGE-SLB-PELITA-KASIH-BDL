@@ -15,7 +15,7 @@ const contactInfo = [
   {
     icon: Phone,
     title: "Telepon / WhatsApp",
-    content: "0896-8083-3967 (Suranti)",
+    content: "0812-3193-7744 (Kepala Sekolah)\n0896-8083-3967 (Suranti)",
     iconBg: "bg-[#e6e5f1]",
     iconColor: "text-[#0b0378]",
   },

@@ -49,7 +49,7 @@ const facilities = [
 export default function Fasilitas() {
   return (
     <section id="fasilitas" className="relative py-12 lg:py-20 bg-[#e6e5f1] overflow-hidden font-poppins">
-      <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div className="relative max-w-7xl mx-auto px-6 sm:px-6 lg:px-8">
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}

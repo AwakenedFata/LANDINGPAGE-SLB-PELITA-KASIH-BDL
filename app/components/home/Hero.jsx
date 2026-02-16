@@ -1,6 +1,6 @@
 "use client";
 
-import { useState, useEffect, useCallback } from "react";
+import { useState, useEffect, useCallback, useRef } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { motion, AnimatePresence } from "framer-motion";
@@ -40,6 +40,25 @@ const SLIDES = [
 export default function Hero() {
   const [currentIndex, setCurrentIndex] = useState(0);
   const [isPaused, setIsPaused] = useState(false);
+  const [showArrows, setShowArrows] = useState(false);
+  const arrowTimeoutRef = useRef(null);
+
+  // Show arrows on interaction (mobile), auto-hide after 2.5s
+  // Desktop always shows via md:opacity-100 in CSS
+  useEffect(() => {
+    const handleInteraction = () => {
+      setShowArrows(true);
+      if (arrowTimeoutRef.current) clearTimeout(arrowTimeoutRef.current);
+      arrowTimeoutRef.current = setTimeout(() => setShowArrows(false), 2500);
+    };
+    window.addEventListener("pointerdown", handleInteraction);
+    window.addEventListener("pointermove", handleInteraction);
+    return () => {
+      window.removeEventListener("pointerdown", handleInteraction);
+      window.removeEventListener("pointermove", handleInteraction);
+      if (arrowTimeoutRef.current) clearTimeout(arrowTimeoutRef.current);
+    };
+  }, []);
 
   const handleScrollTo = (e, href) => {
     e.preventDefault();
@@ -161,7 +180,7 @@ export default function Hero() {
 
       {/* Navigation Arrows */}
       {SLIDES.length > 1 && (
-        <div className="absolute inset-0 z-20 flex items-center justify-between px-4 pointer-events-none">
+        <div className={`absolute inset-0 z-20 flex items-center justify-between px-4 pointer-events-none transition-opacity duration-300 md:opacity-100 ${showArrows ? 'opacity-100' : 'opacity-0'}`}>
           <button
             onClick={prevSlide}
             className="p-3 rounded-full bg-white/10 backdrop-blur-md hover:bg-white/20 text-white pointer-events-auto transition-all hover:scale-110"

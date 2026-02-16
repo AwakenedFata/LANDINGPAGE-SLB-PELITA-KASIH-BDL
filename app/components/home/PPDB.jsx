@@ -113,6 +113,7 @@ export default function PPDB() {
               </div>
               <div>
                 <h5 className="font-semibold text-[#0b0378] mb-1">Informasi Daring</h5>
+                <p className="text-gray-700 text-sm">0812-3193-7744 (Kepala Sekolah)</p>
                 <p className="text-gray-700 text-sm">0896-8083-3967 (Suranti)</p>
               </div>
             </div>

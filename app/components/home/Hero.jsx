@@ -87,7 +87,7 @@ export default function Hero() {
   // Auto-play
   useEffect(() => {
     if (isPaused || SLIDES.length <= 1) return;
-    const interval = setInterval(nextSlide, 5000);
+    const interval = setInterval(nextSlide, 8000);
     return () => clearInterval(interval);
   }, [isPaused, nextSlide]);
 

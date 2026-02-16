@@ -40,25 +40,21 @@ const SLIDES = [
 export default function Hero() {
   const [currentIndex, setCurrentIndex] = useState(0);
   const [isPaused, setIsPaused] = useState(false);
-  const [showArrows, setShowArrows] = useState(false);
-  const arrowTimeoutRef = useRef(null);
+  const touchStartX = useRef(null);
 
-  // Show arrows on interaction (mobile), auto-hide after 2.5s
-  // Desktop always shows via md:opacity-100 in CSS
-  useEffect(() => {
-    const handleInteraction = () => {
-      setShowArrows(true);
-      if (arrowTimeoutRef.current) clearTimeout(arrowTimeoutRef.current);
-      arrowTimeoutRef.current = setTimeout(() => setShowArrows(false), 2500);
-    };
-    window.addEventListener("pointerdown", handleInteraction);
-    window.addEventListener("pointermove", handleInteraction);
-    return () => {
-      window.removeEventListener("pointerdown", handleInteraction);
-      window.removeEventListener("pointermove", handleInteraction);
-      if (arrowTimeoutRef.current) clearTimeout(arrowTimeoutRef.current);
-    };
-  }, []);
+  const handleTouchStart = (e) => {
+    touchStartX.current = e.touches[0].clientX;
+  };
+
+  const handleTouchEnd = (e) => {
+    if (touchStartX.current === null) return;
+    const diff = touchStartX.current - e.changedTouches[0].clientX;
+    if (Math.abs(diff) > 50) {
+      if (diff > 0) nextSlide();
+      else prevSlide();
+    }
+    touchStartX.current = null;
+  };
 
   const handleScrollTo = (e, href) => {
     e.preventDefault();
@@ -103,6 +99,8 @@ export default function Hero() {
       className="relative h-screen w-full overflow-hidden flex items-center justify-center bg-slate-900"
       onMouseEnter={() => setIsPaused(true)}
       onMouseLeave={() => setIsPaused(false)}
+      onTouchStart={handleTouchStart}
+      onTouchEnd={handleTouchEnd}
     >
       {/* Background Slides */}
       <AnimatePresence mode="wait">
@@ -178,9 +176,9 @@ export default function Hero() {
         </AnimatePresence>
       </div>
 
-      {/* Navigation Arrows */}
+      {/* Navigation Arrows - desktop only */}
       {SLIDES.length > 1 && (
-        <div className={`absolute inset-0 z-20 flex items-center justify-between px-4 pointer-events-none transition-opacity duration-300 md:opacity-100 ${showArrows ? 'opacity-100' : 'opacity-0'}`}>
+        <div className="absolute inset-0 z-20 hidden md:flex items-center justify-between px-4 pointer-events-none">
           <button
             onClick={prevSlide}
             className="p-3 rounded-full bg-white/10 backdrop-blur-md hover:bg-white/20 text-white pointer-events-auto transition-all hover:scale-110"

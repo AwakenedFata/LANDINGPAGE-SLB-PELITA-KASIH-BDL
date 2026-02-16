@@ -32,7 +32,7 @@ export default function Sambutan() {
             >
               <div className="relative w-full max-w-[18rem] aspect-[3/4] sm:w-80 sm:h-[28rem]">
                 <Image
-                  src="/images/KEPSEK.jpeg"
+                  src="/images/KEPSEK.webp"
                   alt="Kepala Sekolah SLB Pelita Kasih"
                   fill
                   className="object-contain"

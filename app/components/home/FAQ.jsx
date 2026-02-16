@@ -11,7 +11,7 @@ const faqItems = [
   },
   {
     question: "Berapa usia minimal dan maksimal siswa yang dapat mendaftar?",
-    answer: "Usia minimal untuk mendaftar adalah 4 tahun untuk jenjang TKLB. Untuk jenjang SDLB, usia minimal adalah 6 tahun. Untuk usia maksimal, kami menerima siswa hingga usia sekolah menengah sesuai dengan kebutuhan pendidikan khusus.",
+    answer: "Untuk jenjang SDLB, usia minimal adalah 6 tahun. Untuk usia maksimal, kami menerima siswa hingga usia sekolah menengah atas sesuai dengan kebutuhan pendidikan khusus.",
   },
   {
     question: "Bagaimana proses pendaftaran siswa baru di SLB Pelita Kasih?",
@@ -19,7 +19,7 @@ const faqItems = [
   },
   {
     question: "Jenis kebutuhan khusus apa saja yang dilayani di SLB Pelita Kasih?",
-    answer: "SLB Pelita Kasih melayani peserta didik dengan berbagai jenis ketunaan, termasuk Tunanetra (gangguan penglihatan), Tunarungu (gangguan pendengaran), Tunagrahita (hambatan intelektual), Tunadaksa (hambatan fisik), dan Autisme.",
+    answer: "SLB Pelita Kasih melayani peserta didik dengan berbagai jenis ketunaan, termasuk Tunarungu (gangguan pendengaran), Tunagrahita (hambatan intelektual), Autisme hingga Tunaganda (lebih dari satu hambatan perkembangan).",
   },
 ];
 

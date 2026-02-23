@@ -149,7 +149,7 @@ export default function Hero() {
                   href={currentSlide.ctaLink}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="w-full sm:w-auto px-8 py-3 md:py-4 text-white font-medium rounded-full text-base md:text-lg shadow-xl hover:scale-105 transition-all"
+                  className="w-full sm:w-auto px-8 py-3 md:py-4 text-white font-medium rounded-full text-base md:text-lg shadow-xl hover:text-[#d6a143] transition-all"
                   style={{ backgroundColor: '#0b0378', boxShadow: '0 10px 25px rgba(11, 3, 120, 0.3)' }}
                 >
                   {currentSlide.cta}
@@ -158,7 +158,7 @@ export default function Hero() {
                 <Link
                   href={currentSlide.ctaLink}
                   onClick={(e) => currentSlide.ctaLink.startsWith("#") && handleScrollTo(e, currentSlide.ctaLink)}
-                  className="w-full sm:w-auto px-8 py-3 md:py-4 text-white font-medium rounded-full text-base md:text-lg shadow-xl hover:scale-105 transition-all"
+                  className="w-full sm:w-auto px-8 py-3 md:py-4 text-white font-medium rounded-full text-base md:text-lg shadow-xl hover:text-[#d6a143] transition-all"
                   style={{ backgroundColor: '#0b0378', boxShadow: '0 10px 25px rgba(11, 3, 120, 0.3)' }}
                 >
                   {currentSlide.cta}

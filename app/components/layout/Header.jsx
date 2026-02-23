@@ -134,7 +134,7 @@ export default function Header() {
                     <a
                       href={item.href}
                       onClick={(e) => handleNavClick(e, item.href)}
-                      className="px-5 py-2 rounded-full bg-primary-800 text-white font-medium text-sm hover:bg-primary-700 transition-colors ml-2"
+                      className="px-5 py-2 rounded-full bg-[#0b0378] text-white font-medium text-sm transition-all ml-2 hover:text-[#d6a143]"
                     >
                       {item.label}
                     </a>
@@ -191,9 +191,9 @@ export default function Header() {
                       <a
                         href={item.href}
                         onClick={(e) => handleNavClick(e, item.href)}
-                        className={`block px-4 py-3 rounded-lg font-medium transition-colors ${
+                        className={`block px-4 py-3 rounded-lg font-medium transition-all ${
                           item.highlight
-                            ? "bg-primary-800 text-white"
+                            ? "bg-[#0b0378] text-white hover:text-[#d6a143]"
                             : ""
                         }`}
                         style={!item.highlight ? {

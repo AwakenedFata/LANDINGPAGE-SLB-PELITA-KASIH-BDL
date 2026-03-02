@@ -72,7 +72,7 @@ export default function Footer() {
               </div>
               <div>
                 <p className="font-bold text-lg leading-tight">SLB Pelita Kasih</p>
-                <p className="text-xs text-white/70">Bandaar Lampung</p>
+                <p className="text-xs text-white/70">Bandar Lampung</p>
               </div>
             </Link>
 

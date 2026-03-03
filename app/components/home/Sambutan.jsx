@@ -30,7 +30,7 @@ export default function Sambutan() {
               transition={{ duration: 0.5, delay: 0.2 }}
               className="lg:col-span-2 flex justify-center"
             >
-              <div className="relative w-full max-w-[18rem] aspect-[3/4] sm:w-80 sm:h-[28rem]">
+              <div className="relative w-full max-w-[18rem] aspect-3/4 sm:w-80 sm:h-112">
                 <Image
                   src="/images/KEPSEK.webp"
                   alt="Kepala Sekolah SLB Pelita Kasih"
@@ -82,7 +82,7 @@ export default function Sambutan() {
               </div>
 
               {/* Quote Highlight */}
-              <div className="mt-8 p-6 rounded-xl bg-gradient-to-r from-purple-50 via-purple-50 to-transparent border-l-4 border-[#0b0378]">
+              <div className="mt-8 p-6 rounded-xl bg-linear-to-r from-purple-50 via-purple-50 to-transparent border-l-4 border-[#0b0378]">
                 <p className="text-[#0b0378] italic font-medium text-base sm:text-lg">
                   &ldquo;Pendidikan adalah proses pendampingan untuk menumbuhkan
                   kemampuan dan kemandirian.&rdquo;

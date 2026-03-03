@@ -42,7 +42,7 @@ export default function Footer() {
   };
 
   return (
-    <footer className="relative bg-gradient-to-b from-[#494578] to-[#0b0378] text-white overflow-hidden font-poppins">
+    <footer className="relative bg-linear-to-b from-[#494578] to-[#0b0378] text-white overflow-hidden font-poppins">
       {/* Glow Background */}
       <div className="absolute inset-0 pointer-events-none">
         <div className="absolute -top-40 -right-40 w-80 h-80 bg-white/5 rounded-full blur-3xl" />
